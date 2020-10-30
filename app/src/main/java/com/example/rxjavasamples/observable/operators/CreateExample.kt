@@ -7,7 +7,8 @@ fun main() {
     getObservableFromList(listOf("SAMSUNG", "APPLE", "XIOMI"))
         .subscribe(
             { item -> println(item) },
-            { error -> println(error) })
+            { error -> println(error) },
+            { println("Completed") })
 
 }
 

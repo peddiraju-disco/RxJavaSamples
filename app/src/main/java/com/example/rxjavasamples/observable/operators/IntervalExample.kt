@@ -7,10 +7,10 @@ import java.util.concurrent.TimeUnit
 fun main() {
 
     Observable.intervalRange(
-        10L,     // Start
-        5L,      // Count
-        0L,   // Initial Delay
-        3L,      // Period
+        10L,
+        5L,
+        0L,
+        1L,
         TimeUnit.SECONDS
     ).subscribe { println("Result we just received: $it") }
 

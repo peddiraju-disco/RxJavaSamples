@@ -2,6 +2,7 @@ package com.example.rxjavasamples.observable.operators
 
 import io.reactivex.Observable
 
+
 fun main() {
 
     Observable.fromArray("SAMSUNG", "APPLE", "XIOMI")
@@ -13,4 +14,5 @@ fun main() {
             { error -> println("Error: $error") },         // onError
             { println("Completed") }                       // onComplete
         )
+
 }
